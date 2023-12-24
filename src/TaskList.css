@@ -1,0 +1,18 @@
+ /* TaskList.css */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.listItem {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid rgb(35, 33, 33);
+  padding: 10px;
+  text-align: left;
+}

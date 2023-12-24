@@ -1,0 +1,17 @@
+/* App.css */
+.container {
+  text-align: center;
+  margin: 20px;
+}
+*{
+  background-color: aqua;
+}
+h1 {
+  color: #007bff; /* Example color (Material-UI primary color) */
+}
+
+/* Additional styling for the TaskForm and TaskList components */
+.TaskForm,
+.TaskList {
+  margin-top: 20px;
+}
