@@ -39,30 +39,45 @@ const TaskForm = ({ onAddTask }) => {
         className="input"
         placeholder="Name"
       />
+      <label htmlFor="dateAdded">Date Added:</label>
       <input
-        type="text"
+        type="date"
         name="dateAdded"
         value={task.dateAdded}
         onChange={handleInputChange}
         className="input"
         placeholder="Date Added"
       />
+      <label htmlFor="dueDate">Add Due Date:</label>
       <input
-        type="text"
+        type="date"
         name="dueDate"
         value={task.dueDate}
         onChange={handleInputChange}
         className="input"
         placeholder="Due Date"
       />
-      <input
+      {/* <input
         type="text"
         name="priority"
         value={task.priority}
         onChange={handleInputChange}
         className="input"
         placeholder="Priority"
-      />
+      /> */}
+      <label>
+        Priority:
+        <select
+          name="priority"
+          value={task.priority}
+          onChange={handleInputChange}
+          className="input">
+          <option value="">Select Priority</option>
+          <option value="HIGH">High</option>
+          <option value="MEDIUM">Medium</option>
+          <option value="LOW">Low</option>
+        </select>
+      </label>
       <input
         type="text"
         name="niche"
